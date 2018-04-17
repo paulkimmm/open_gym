@@ -1,0 +1,22 @@
+<ion-content>
+	<ion-list class="list-inset">
+		<ion-item class="item-text-wrap" ng-repeat="gym in gyms | filter: { name: whichgym }">
+			<h1>{{ gym.name }}</h1>
+			<h2>{{ gym.address }}</h2>
+			<p>{{ gym.pack }}</p>
+
+
+			<div class="col">
+  				<button class="button button-block button-balanced">
+  					Sparse
+  				</button>
+  				<button class="button button-block button-energized">
+  					Moderate
+  				</button>
+  				<button class="button button-block button-assertive">
+  					Packed
+  				</button>
+			</div>
+		</ion-item>
+	</ion-list>
+</ion-content>

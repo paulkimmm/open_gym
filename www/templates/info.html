@@ -1,0 +1,10 @@
+<ion-view view-title="Info">
+	<ion-content>
+		<ion-list class="list-inset">
+			<ion-item class="item-text-wrap" ng-repeat="gym in gyms | filter: { name: gyminfo }">
+				<h1>{{ gym.name }}</h1>
+				<h2>{{ gym.address }}</h2>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

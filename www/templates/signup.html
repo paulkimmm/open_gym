@@ -1,0 +1,32 @@
+<ion-view view-title="Sign Up">
+
+<ion-content class="padding">
+	<form name="signup" ng-submit="signup()" novalidate>
+	<h2>{{ message }}</h2>
+	<div class="list list-inset">
+		<label class="item item-input">
+ 			<span class="input-label">First Name</span>
+ 			<input type="text" name="firstname" ng-model="user.firstname" ng-required="true">
+		</label>
+
+		<label class="item item-input">
+ 			<span class="input-label">Last Name</span>
+ 			<input type="text" name="lastname" ng-model="user.lastname" ng-required="true">
+		</label>
+
+ 		<label class="item item-input">
+ 			<span class="input-label">Email</span>
+ 			<input type="email" name="email" ng-model="user.email" ng-required="true">
+	 	</label>
+
+ 		<label class="item item-input">
+ 			<span class="input-label">Password</span>
+ 			<input type="password" name="password" ng-model="user.password" ng-required="true">
+		</label>
+	</div>
+	<button type="submit" class="button button-block button-assertive" ng-disabled="signup.$invalid">
+  			Sign Up
+	</button>
+	</form>
+</ion-content>
+</ion-view>
